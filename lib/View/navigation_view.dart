@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:valburytestapp/View/home_view.dart';
+import 'package:line_icons/line_icons.dart';
 
 class NavigationView extends StatefulWidget {
   const NavigationView({Key? key}) : super(key: key);
@@ -37,6 +38,7 @@ class _NavigationViewState extends State<NavigationView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
       ),
@@ -45,26 +47,24 @@ class _NavigationViewState extends State<NavigationView> {
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
             label: 'Home',
-            backgroundColor: Colors.red,
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.business),
+            icon: Icon(LineIcons.hospital,),
             label: 'Rumah Sakit',
-            backgroundColor: Colors.green,
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.store),
+            icon: Icon(LineIcons.medicalClinic),
             label: 'Klinik',
-            backgroundColor: Colors.purple,
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.account_circle),
             label: 'Profile',
-            backgroundColor: Colors.pink,
           ),
         ],
         currentIndex: _selectedIndex,
-        selectedItemColor: Colors.amber[800],
+        unselectedItemColor: Colors.black,
+        selectedItemColor: Colors.blue,
+        backgroundColor: Colors.black12,
         onTap: _onItemTapped,
       ),
     );

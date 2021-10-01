@@ -19,6 +19,8 @@ class _SplashViewState extends State<SplashView> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
+      bottom: false,
+      top: false,
       child: Scaffold(
         backgroundColor: Colors.white,
         body: Container(

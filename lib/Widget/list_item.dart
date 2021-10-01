@@ -36,6 +36,7 @@ class _MyListItemState extends State<MyListItem> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: Container(
         child: ListView.builder(
           itemCount: myList.length,
@@ -49,7 +50,14 @@ class _MyListItemState extends State<MyListItem> {
                   Container(
                     child: Row(
                       children: [
-                        Image.asset('assets/images/flutter-logo.jpg', width: sizeImage, height: sizeImage,),
+                        Container(
+                          margin: EdgeInsets.all(8),
+                          child: Image.asset(
+                            'assets/images/hospital.png', 
+                            width: sizeImage, 
+                            height: sizeImage,
+                          )
+                        ),
                         Column(
                           mainAxisAlignment: MainAxisAlignment.start,
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -60,7 +68,7 @@ class _MyListItemState extends State<MyListItem> {
                             ),
                             Text(
                               '${myList[i]['address']}',
-                              style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                              style: TextStyle(fontSize: 16, color: Colors.grey),
                             ),
                           ],
                         )

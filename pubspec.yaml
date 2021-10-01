@@ -29,6 +29,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   future_progress_dialog: ^0.2.0
+  line_icons: ^2.0.1
 
 dev_dependencies:
   flutter_test:
@@ -49,6 +50,7 @@ flutter:
   assets:
     - assets/images/flutter-logo.jpg
     - assets/images/banner.jpg
+    - assets/images/hospital.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

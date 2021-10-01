@@ -28,7 +28,10 @@ class _AuthentationViewState extends State<AuthentationView> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
+      bottom: false,
+      top: false,
       child: Scaffold(
+        backgroundColor: Colors.white,
         appBar: AppBar(
           title: Text(
             'Register or Login',
@@ -49,6 +52,7 @@ class _AuthentationViewState extends State<AuthentationView> {
                   decoration: InputDecoration(
                     hintText: 'Phone',
                   ),
+                  keyboardType: TextInputType.phone,
                 ),
                 TextFormField(
                   validator: validateEmail,

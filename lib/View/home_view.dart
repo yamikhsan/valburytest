@@ -20,7 +20,10 @@ class _HomeViewState extends State<HomeView> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
+      bottom: false,
+      top: false,
       child: Scaffold(
+        backgroundColor: Colors.white,
         appBar: AppBar(
           leading: Icon(Icons.home, size: 24, color: Colors.black,),
           title: Text(
