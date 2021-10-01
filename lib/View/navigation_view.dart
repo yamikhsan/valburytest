@@ -62,9 +62,9 @@ class _NavigationViewState extends State<NavigationView> {
           ),
         ],
         currentIndex: _selectedIndex,
-        unselectedItemColor: Colors.black,
-        selectedItemColor: Colors.blue,
-        backgroundColor: Colors.black12,
+        unselectedItemColor: Colors.grey,
+        selectedItemColor: Colors.black,
+        backgroundColor: Colors.white,
         onTap: _onItemTapped,
       ),
     );

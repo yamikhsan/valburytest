@@ -15,7 +15,7 @@ class MyListItem extends StatefulWidget {
 class _MyListItemState extends State<MyListItem> {
 
   List myList = List.empty(growable: true);
-  double sizeImage = 75;
+  double sizeImage = 60;
 
   @override
   void initState() {
@@ -51,7 +51,7 @@ class _MyListItemState extends State<MyListItem> {
                     child: Row(
                       children: [
                         Container(
-                          margin: EdgeInsets.all(8),
+                          margin: EdgeInsets.only(left: 20, top: 8, right: 8, bottom: 8),
                           child: Image.asset(
                             'assets/images/hospital.png', 
                             width: sizeImage, 

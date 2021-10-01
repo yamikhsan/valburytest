@@ -91,6 +91,7 @@ class _TabbarState extends State<Tabbar> with TickerProviderStateMixin {
             Container(
                 height: 49.0,
                 child: ListView.builder(
+                    padding: EdgeInsets.symmetric(horizontal: 14),
                     physics: BouncingScrollPhysics(),
                     controller: _scrollController,
                     scrollDirection: Axis.horizontal,

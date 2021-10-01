@@ -89,6 +89,7 @@ class _HomeViewState extends State<HomeView> {
             Container(
               height: 100,
               child: ListView.builder(
+                padding: EdgeInsets.symmetric(horizontal: 12),
                 physics: BouncingScrollPhysics(),
                 scrollDirection: Axis.horizontal,
                 itemCount: banner.length,
